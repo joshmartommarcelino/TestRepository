@@ -46,4 +46,40 @@ print('Enter the amount of ' +
       'sales for each day and ' +
       'press Enter.')
 
+print(f'Hello Miku')
 
+name = 'Miku'
+print(f'Hi {name}!')
+
+print(f'The value is {30 + 9}.')
+
+val = 10
+print(f'The value is {val + 9}.')
+
+# score = float(input('Enter your score: '))
+
+num = 987.654321
+print(f'{num:.5f}')
+
+num = 123456789.10
+print(f'{num:,.2f}')
+
+discount = 0.5
+print(f'{discount:.0%}')
+
+num = 123456789
+print(f'{num:,d}')
+
+num = 12345.6789
+print(f'{num:.2e}')
+
+print(f'{num:<20.2f}')
+print(f'{num:>20.2f}')
+print(f'{num:^20.2f}')
+
+print(f'{num:^10,.2f}')
+
+INTEREST_RATE = 0.069
+
+balance = 69,420
+amount = balance * INTEREST_RATE
