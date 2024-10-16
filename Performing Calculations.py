@@ -86,4 +86,7 @@ num = 17
 print(f'{num:^10,.2f}')
 
 import turtle
+turtle.mainloop()
 turtle.forward(100)
+
+
