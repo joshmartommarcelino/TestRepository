@@ -64,7 +64,7 @@ print(f'{num:.5f}')
 num = 123456789.10
 print(f'{num:,.2f}')
 
-discount = 0.5
+discount = 0.39
 print(f'{discount:.0%}')
 
 num = 123456789
