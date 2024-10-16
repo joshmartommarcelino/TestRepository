@@ -79,7 +79,11 @@ print(f'{num:^20.2f}')
 
 print(f'{num:^10,.2f}')
 
-INTEREST_RATE = 0.069
+num = 12345.6789
+print(f'The number is {num:12,.2f}')
 
-balance = 69,420
-amount = balance * INTEREST_RATE
+num = 17
+print(f'{num:^10,.2f}')
+
+import turtle
+turtle.forward(100)
