@@ -91,8 +91,8 @@ turtle.circle (100)
 
 age = input ("Enter your age")
 
-#if(age = 18)
-#print("You are an adult")
-#else
-#print("you are child")
-
+age = input ("enter your age")
+if age > 18:
+      print("You are a minor")
+elif age < 18:
+      print("you are an adult")
