@@ -87,6 +87,12 @@ print(f'{num:^10,.2f}')
 
 import turtle
 turtle.mainloop()
-turtle.forward(100)
+turtle.circle (100)
 
+age = input ("Enter your age")
+
+#if(age = 18)
+#print("You are an adult")
+#else
+#print("you are child")
 
