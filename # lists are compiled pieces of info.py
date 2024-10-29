@@ -16,3 +16,5 @@ print(marks[-2])
 print(len(marks))
 
 print(marks + float)
+
+print(marks[:2])
