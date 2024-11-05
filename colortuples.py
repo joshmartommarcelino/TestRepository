@@ -5,3 +5,6 @@ print(color2)
 print(color3)
 
 numbers1 = (1,2,3)
+numbers2 = (4,5,6)
+numbers_combined = numbers1 + numbers2
+print(numbers_combined)
