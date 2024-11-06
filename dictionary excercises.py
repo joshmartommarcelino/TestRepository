@@ -32,3 +32,17 @@ student_4 = {
 print(student_4['name'])
 
 print(student.get("GPA", "Not Available"))
+
+student_5 = {
+    "name" : "Dave",
+    "age" : 20,
+    "major" : "Chemistry"
+}
+
+student_5["GPA"] = 3.8
+
+student_5["age"] = 21
+
+student_5.pop("major")
+
+print(student_5)
