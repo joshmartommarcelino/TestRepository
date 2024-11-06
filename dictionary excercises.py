@@ -15,10 +15,20 @@ print(Product)
 student_info = {
     'name' : 'Bob',
     'age' : 21,
-    'major' : 'Computer Science', 
+    'major' : 'Computer Science',
 }
 
 student_info_2 = dict(name ="Emma",age=22,major="Biology")
 
 print(student_info)
 print(student_info_2)
+
+student_4 = {
+    "name" : "Charlie",
+    "age" : 19,
+    "major" : "Physics"
+}
+
+print(student_4['name'])
+
+print(student.get("GPA", "Not Available"))
