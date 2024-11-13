@@ -47,7 +47,7 @@ print("Sum of elements:", total_sum)
 
 age=[23, 45, 28, 34, 60]
 print("Maximum age:", max(age))
-print("minumum age:", min(age))
+print("minimum age:", min(age))
 
 scores=[88,56,92,78,61]
 scores.sort()
