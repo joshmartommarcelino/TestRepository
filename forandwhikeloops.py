@@ -153,3 +153,7 @@ for word in words:
     else:
         word_count[word] = 1
 print("Word occurrences:", word_count)
+
+### 15. Write a program that prints out the odd numbers from 0-50
+for number in range(1, 51, 2):
+    print(number)
