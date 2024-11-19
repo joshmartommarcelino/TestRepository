@@ -163,14 +163,14 @@ if __name__ == "__main__":
   average_marks = calculate_average()
   print(f"The average marks are: {average_marks:.2f}")
 
-def calculate_average():  # This is like asking your friend for the scores
-  total_marks = 0  # Imagine a box to store the total score, initially empty
-  for i in range(1, 5):  # This is like asking for each test score, one by one
+def calculate_average():  # defines the function for the asking or marks to create the average
+  total_marks = 0  # stores the scores just like in exercises 4 in sa1
+  for i in range(1, 5):  # sets the range of the subjects 1-4
     marks = float(input(f"Enter marks for subject {i} (out of 100): "))  # Ask for the score
-    total_marks += marks  # Add the score to the box
-  average = total_marks / 4  # Divide the total score by 4
-  return average  # Give the average score back
+    total_marks += marks  # this gathers the input and places it into total_marks
+  average = total_marks / 4  # divides the total score by 4
+  return average  # gives the average 
 
-if __name__ == "__main__":  # This part just runs the code
-  average_marks = calculate_average()  # Get the average
-  print(f"The average marks are: {average_marks:.2f}")  # Show the average
+if __name__ == "__main__":  # without this it wouldn't call the function and it would not work
+  average_marks = calculate_average()  # just renames the function for printing it later
+  print(f"The average marks are: {average_marks:.2f}")  # prints the defined function
