@@ -139,3 +139,38 @@ def convert_temperature(temperature, scale):
 # Example
 print(convert_temperature(0, "C"))  # Celsius to Fahrenheit
 print(convert_temperature(32, "F"))  # Fahrenheit to Celsius
+
+def calculate_average():
+  """Calculates the average of 4 subjects out of 100."""
+
+  total_marks = 0
+  for i in range(1, 5):
+    while True:
+      try:
+        marks = float(input(f"Enter marks for subject {i} (out of 100): "))
+        if 0 <= marks <= 100:
+          total_marks += marks
+          break
+        else:
+          print("Marks must be between 0 and 100. Please try again.")
+      except ValueError:
+        print("Invalid input. Please enter a number.")
+
+  average = total_marks / 4
+  return average
+
+if __name__ == "__main__":
+  average_marks = calculate_average()
+  print(f"The average marks are: {average_marks:.2f}")
+
+def calculate_average():  # This is like asking your friend for the scores
+  total_marks = 0  # Imagine a box to store the total score, initially empty
+  for i in range(1, 5):  # This is like asking for each test score, one by one
+    marks = float(input(f"Enter marks for subject {i} (out of 100): "))  # Ask for the score
+    total_marks += marks  # Add the score to the box
+  average = total_marks / 4  # Divide the total score by 4
+  return average  # Give the average score back
+
+if __name__ == "__main__":  # This part just runs the code
+  average_marks = calculate_average()  # Get the average
+  print(f"The average marks are: {average_marks:.2f}")  # Show the average
