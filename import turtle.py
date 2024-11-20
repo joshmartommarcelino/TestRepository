@@ -1,3 +1,3 @@
 import turtle
+turtle.circle(100)
 turtle.mainloop()
-turtle.circle (100)

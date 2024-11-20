@@ -140,36 +140,24 @@ def convert_temperature(temperature, scale):
 print(convert_temperature(0, "C"))  # Celsius to Fahrenheit
 print(convert_temperature(32, "F"))  # Fahrenheit to Celsius
 
-def calculate_average():
+def calculate_average():  # defines the function for the asking or marks to create the average
   """Calculates the average of 4 subjects out of 100."""
 
-  total_marks = 0
-  for i in range(1, 5):
+  total_marks = 0  # stores the scores just like in exercises 4 in sa1
+  for i in range(1, 5):  # sets the range of the subjects 1-4
     while True:
       try:
-        marks = float(input(f"Enter marks for subject {i} (out of 100): "))
+        marks = float(input(f"Enter marks for subject {i} (out of 100): ")) # asks for the score
         if 0 <= marks <= 100:
-          total_marks += marks
+          total_marks += marks # this gathers the input and places it into total_marks
           break
         else:
           print("Marks must be between 0 and 100. Please try again.")
       except ValueError:
         print("Invalid input. Please enter a number.")
 
-  average = total_marks / 4
-  return average
-
-if __name__ == "__main__":
-  average_marks = calculate_average()
-  print(f"The average marks are: {average_marks:.2f}")
-
-def calculate_average():  # defines the function for the asking or marks to create the average
-  total_marks = 0  # stores the scores just like in exercises 4 in sa1
-  for i in range(1, 5):  # sets the range of the subjects 1-4
-    marks = float(input(f"Enter marks for subject {i} (out of 100): "))  # Ask for the score
-    total_marks += marks  # this gathers the input and places it into total_marks
-  average = total_marks / 4  # divides the total score by 4
-  return average  # gives the average 
+  average = total_marks / 4 # divides the total score by 4
+  return average # gives the average
 
 if __name__ == "__main__":  # without this it wouldn't call the function and it would not work
   average_marks = calculate_average()  # just renames the function for printing it later
