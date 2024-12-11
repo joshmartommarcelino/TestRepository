@@ -19,3 +19,6 @@ def select_item():
     else:
         print("Invalid item code. Please try again.")
         return None
+
+#main function
+if __name__ == "__main__":
