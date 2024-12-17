@@ -22,3 +22,9 @@ def select_item():
 
 #main function
 if __name__ == "__main__":
+    while True:
+        code = select_item()
+        if code is not None:
+            price = items[code][1] #gets the price of the selected item
+            print(f"\nYou have chosen {items[code][0]}, it costs ${price:.2f}.")
+            break
