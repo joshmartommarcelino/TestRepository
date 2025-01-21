@@ -44,7 +44,7 @@ def play_game():
           "This code is for educational and entertainment purposes only and should never be attempted in reality.")
 
     game = RussianRoulette()
-    game.spin_chamber()
+    game.spin_chamber() 
 
     while True:
         input("Press Enter to pull the trigger... ") 
