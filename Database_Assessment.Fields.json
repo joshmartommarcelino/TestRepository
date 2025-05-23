@@ -1,0 +1,32 @@
+[{
+  "Field_ID": 1,
+  "FieldName": "Mathematics"
+},
+{
+  "Field_ID": 2,
+  "FieldName": "Physics"
+},
+{
+  "Field_ID": 3,
+  "FieldName": "Computing"
+},
+{
+  "Field_ID": 4,
+  "FieldName": "Engineering"
+},
+{
+  "Field_ID": 5,
+  "FieldName": "Chemistry"
+},
+{
+  "Field_ID": 6,
+  "FieldName": "Astronomy"
+},
+{
+  "Field_ID": 7,
+  "FieldName": "Biology"
+},
+{
+  "Field_ID": 8,
+  "FieldName": "Medicine"
+}]
