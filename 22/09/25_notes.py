@@ -35,3 +35,45 @@ if voting_age >= 18:
 else:
     #Executes if false
     print("Sorry you are too young to vote.")
+
+'''this is a refresher for while and for loops'''
+#printing a list of 1-10 using loops
+
+print("=== WHILE LOOPS ===")
+
+# While loop example
+print("While loop:")
+i = 1
+while i <= 10:
+    print(i)
+    i += 1
+
+print("\n=== FOR LOOPS ===")
+
+# For loop with range
+print("For loop with range:")
+for i in range(1, 11):
+    print(i)
+
+# printing even numbers 1-10
+
+print("WHILE EVEN LOOP:")
+i = 2
+while i <= 10:
+    print(i)
+    i += 2
+
+print("\nFOR EVEN LOOP:")
+for i in range(2, 11, 2):
+    print(i)
+
+# printing odd number 1-10
+print("WHILE ODD LOOP:")
+i = 1
+while i <= 10:
+    print(i)
+    i += 2
+
+print("\nFOR ODD LOOP:")
+for i in range(1, 11, 2):
+    print(i)
