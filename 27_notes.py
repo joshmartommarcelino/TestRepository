@@ -65,4 +65,23 @@ l2 = Label(root, text ="I am studying in Bath Spa University Academic center RAK
 l2.pack()
 l3 = Label(root,text="Josh Martom Marcelino",fg="Blue", bg="#FFFFFF", font=('Arial',7))
 l3.pack()
+l1 = Label(root, text ="Hobbies",
+       	fg="Blue",
+      	bg="#FFFFFF",
+      	font=('Arial',10))
+l1.pack(anchor = W )
+'''This part is for check buttons, west anchoring, radio buttons'''
+Label(root, text="Check Buttons to select multiple options").pack(anchor = W) 
+C1 = Checkbutton(root, text = "Gaming")
+C2 = Checkbutton(root, text = "Guitar")
+C1.pack(anchor = W )
+C2.pack(anchor = W )
+Label(root, text="Radio Buttons to select one option from multiple options").pack(anchor = W)
+R1 = Radiobutton(root, text="Web Developer",value=1)
+R1.pack( anchor = W )
+R2 = Radiobutton(root, text="Data Analyst",value=2)
+R2.pack( anchor = W )
+R3 = Radiobutton(root, text="Backend Developer",value=3)
+R3.pack( anchor = W)
+
 root.mainloop() 
