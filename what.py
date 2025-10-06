@@ -43,13 +43,27 @@ def open_third_window():
     Entry(tertiary, show="*").grid(row=1, column=1, sticky=E, padx=5, pady=5)
     
     Button(tertiary, text="Login").grid(row=2, column=1, sticky=E, padx=5, pady=5)
-    
-    # 4. CRITICAL: Do NOT call mainloop() here. The root.mainloop() handles it.
+
+def open_fourth_window():
+    # 4. FOURTH WINDOW: You know the drill at this point.
+    fourth = tk.Toplevel(main)
+    fourth.title('Fourth Window (Toplevel)')
+    fourth.geometry("400x200+100+500") # Adding a unique geometry is helpful
+    label1 = Label(fourth, bg='red', width=10, height=2)
+    label2 = Label(fourth, bg='green', width=10, height=2)
+    label3 = Label(fourth, bg='blue', width=10, height=2) 
+    # Relative positioning
+    label1.place(relx=0.5, rely=0.2, anchor='center')
+    label2.place(relx=0.5, rely=0.5, anchor='center')
+    label3.place(relx=0.5, rely=0.8, anchor='center') 
+
+    # 5. CRITICAL: Do NOT call mainloop() here. The main.mainloop() handles it.
 
 # Now, call the function to create the second window
 # The three windows are now created and ready to be displayed.
 open_second_window()
 open_third_window()
+open_fourth_window()
 
 
 # 4. START LOOP: The ONE AND ONLY mainloop() for the entire application.
